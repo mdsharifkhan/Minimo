@@ -1,0 +1,219 @@
+/*
+			Master Stylesheet
+	===============================================
+	Template Name : Minimo
+	Author : Mohammed Sharif
+	Author URL : https://www.facebook.com/mohammedsharif.geniusboy.5
+	Description :
+	Version :1.0.0
+	Tag :
+*/
+/*
+			Table of Contents
+	===============================================
+	1.Typrography
+	2.Header
+	3.Banner
+	4.Blog
+	5.Newsletter
+	6.Another Blog
+	7.Footer
+*/
+/* ============================
+	style for	Typrography
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #626262;
+	
+}
+.container-fluid{
+	width: 90%;
+	margin: 0 auto;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.img-fluid{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 35px;
+}
+p,ul,h1, h2, h3, h4, h5, h6, footer .row{
+	margin: 0;
+	padding: 0;
+}
+header, section, footer{
+	padding: 40px 0;
+}
+/* ==========================
+	style for header
+============================= */
+header .navbar-brand{
+	width: 10%;
+}
+header nav{
+	width: 80%;
+}
+header nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 60px;
+}
+header nav ul li:last-child{
+	padding-right: 0;
+}
+header nav ul{
+	text-align: right;
+}
+header nav ul a{
+	text-transform: uppercase;
+	color: #626262;
+	text-decoration: none;
+}
+header nav ul a:hover{
+	color: #000000;
+	transition: 0.3s all ease-in-out;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+}
+/* ======================
+	style for banner
+====================== */
+#banner .banner{
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 540px;
+}
+/* =======================
+	style for blog
+======================== */
+.blog-text{
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #b4ad9e; 
+}
+h2{
+	padding: 30px 0;
+}
+.blog-content{
+	line-height: 24px;
+	padding-bottom: 35px;
+}
+.row{
+	padding: 90px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.row .blog-text{
+	padding-top: 20px;
+}
+.row .blog-content{
+	padding-bottom: 0;
+}
+.col-6{
+	width: 47%;
+}
+/* ========================
+	style for newsletter
+========================== */
+#newsletter,footer{
+	background-color: #f0f0f0;
+	padding-bottom: 100px;
+}
+#newsletter h2{
+	text-align: center;
+	color: #333333;
+}
+#newsletter .container{
+	width: 30%;
+	margin: 0 auto;
+}
+form{
+	border-bottom: 1px solid #000000;
+	position: relative;
+	margin-top: 25px;
+}
+input[type="email"]{
+	border: none;
+	background: #f0f0f0;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+input[type="email"]:focus{
+	outline: none;
+}
+input[type="email"]::placeholder{
+	font-size: 15px;
+}
+form button{
+	background-color: #f0f0f0;
+	border: none;
+	position: absolute;
+	right: 0;
+	padding-top: 12px;
+	cursor: pointer;
+}
+/* =============style for another blog========== */
+#anotherBlog{
+	padding-bottom: 500px;
+}
+#anotherBlog button{
+	padding: 15px 25px;
+	font-size: 20px;
+	background-color: #ffffff;
+	border: none;
+	border: 1px solid #333333;
+	cursor: pointer;
+	color: #626262;
+}
+#anotherBlog button:hover{
+	background-color: #626262;
+	color: #ffffff;
+	transition: 0.4s;
+}
+.button{
+	width: 150px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+/* ===========style for footer========= */
+footer{
+	padding: 40px 0;
+}
+footer li{
+	list-style: none;
+	display: inline-block;
+}
+footer li a{
+	color: #000000;
+	text-decoration: none;
+}
+footer .row .col-6:last-child ul{
+	text-align: right;
+}
+.pr{
+	padding-right: 20px;
+}
